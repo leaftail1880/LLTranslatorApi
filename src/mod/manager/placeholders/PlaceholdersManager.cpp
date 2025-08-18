@@ -103,8 +103,8 @@ const Packet& PlaceholdersManager::processPacket(const NetworkIdentifier& id, co
         return processToastRequestPacket(id, packet);
    // case MinecraftPacketIds::AddActor:
     //    return processAddActorPacket(id, packet);
-   // case MinecraftPacketIds::AddPlayer:
-   //     return processAddPlayerPacket(id, packet);
+    case MinecraftPacketIds::AddPlayer:
+        return processAddPlayerPacket(id, packet);
   //  case MinecraftPacketIds::SetActorData:
  //       return processSetActorDataPacket(id, packet);
     case MinecraftPacketIds::ShowModalForm:
