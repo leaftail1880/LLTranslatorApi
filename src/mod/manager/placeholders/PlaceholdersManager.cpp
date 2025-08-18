@@ -101,12 +101,12 @@ const Packet& PlaceholdersManager::processPacket(const NetworkIdentifier& id, co
         return processSetTitlePacket(id, packet);
     case MinecraftPacketIds::ToastRequest:
         return processToastRequestPacket(id, packet);
-    case MinecraftPacketIds::AddActor:
-        return processAddActorPacket(id, packet);
-    case MinecraftPacketIds::AddPlayer:
-        return processAddPlayerPacket(id, packet);
-    case MinecraftPacketIds::SetActorData:
-        return processSetActorDataPacket(id, packet);
+   // case MinecraftPacketIds::AddActor:
+    //    return processAddActorPacket(id, packet);
+   // case MinecraftPacketIds::AddPlayer:
+   //     return processAddPlayerPacket(id, packet);
+  //  case MinecraftPacketIds::SetActorData:
+ //       return processSetActorDataPacket(id, packet);
     case MinecraftPacketIds::ShowModalForm:
         return processShowModalFormRequestPacket(id, packet);
     default:
